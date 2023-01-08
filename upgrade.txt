@@ -1,0 +1,35 @@
+HTML CODE
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device_width">
+  <title>Using HTML, CSS create a rotate effect for the image on hover</title>
+</head>
+<body>
+  <strong>Preview:</strong><br>
+<figure class="hover-rotate">
+  <img src="flower-2.jpeg" height="100" width="100"/></figure>
+</body>
+</html>
+
+CSS CODE
+<style> 
+.hover-rotate {
+  overflow: hidden;
+  margin: 8px;
+  min-width: 240px;
+  max-width: 320px;
+  width: 100%;
+}
+
+.hover-rotate img {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.hover-rotate:hover img {
+  transform: scale(1.3) rotate(5deg);
+}
+</style>
+
